@@ -13,58 +13,64 @@
     <header>
 
     </header>
-    <main>
+
+    <main class="container">
         <table>
             <tr>
                 <td>
-                    <form id="notas" action="">
+                    <form id="notas">
                         <ul>
                             <li>
-                                <label for="programacion">Programación:</label>
+                                <label for="programacion">Programación</label>
                             </li>
                             <li>
-                                <input type="number" step="any" id="prog" name="programacion">
+                                <input type="text" name="programacion" id="programacion">
                             </li>
                             <li>
-                                <label for="bbdd">Bases de Datos:</label>
+                                <label for="bbdd">Bases de datos</label>
                             </li>
                             <li>
-                                <input type="number" step="any" id="bbdd" name="bbdd"></li>
-                            <li>
-                                <label for="eedd">Entornos de Desarrollo:</label>
+                                <input type="text" name="bbdd" id="bbdd">
                             </li>
                             <li>
-                                <input type="number" step="any" id="eedd" name="eedd"></li>
-                            <li>
-                                <label for="llmm">Lenguajes de Marcas:</label>
+                                <label for="eedd">Entornos de desarrollo</label>
                             </li>
                             <li>
-                                <input type="number" step="any" id="llmm" name="llmm"></li>
-                            <li class="boton">
-                                <button onclick="return calcMedia();">¡CALCULAR!</button>
+                                <input type="text" name="eedd" id="eedd">
+                            </li>
+                            <li>
+                                <label for="llmm">Lenguajes de marcas</label>
+                            </li>
+                            <li>
+                                <input type="text" name="llmm" id="llmm">
+                            </li>
+                            <li>
+                                <button id="calcular" onclick="return CalcularMedia()">Calcular</button>
                             </li>
                         </ul>
                     </form>
                 </td>
                 <td>
-                    <form id="media" action="">
+                    <form id="resultado">
                         <ul>
                             <li>
-                                <label for="media">MEDIA:</label>
+                                <label for="media">Media</label>
                             </li>
                             <li>
-                                <input type="text" id="media" readonly></li>
+                                <input type="text" name="media" id="media" readonly>
+                            </li>
                         </ul>
                     </form>
-
                 </td>
             </tr>
         </table>
     </main>
-    <footer>
+
+    <footer class="container">
 
     </footer>
-    <script type="text/javascript" src="./js/app.js"></script>
+
+    <script src="./js/app.js"></script>
 </body>
 
 </html>
