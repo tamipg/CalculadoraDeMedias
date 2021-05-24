@@ -7,6 +7,10 @@ body {
     font-weight: bolder;
 }
 
+label#eng {
+    color: blue;
+}
+
 input {
     width: 100%;
 }
